@@ -25,6 +25,8 @@ preprocess=function(data){
         matrixName = "custom_cell_type_matrix", # name of final profile matrix
         outDir = NULL,                    # path to desired output directory, set to NULL if matrix should not be written
         normalize = TRUE,                # Should data be normalized? 
+        minCellNum = 1,
+        minGenes = 1
     ) 
     
     return(
