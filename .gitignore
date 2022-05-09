@@ -8,3 +8,6 @@ SpatialDecon/
 stereo_seq/
 ST_PDAC/
 .ipynb_checkpoints/
+results_RCTD/
+results_RCTD_old/
+results_SpatialDecon/
