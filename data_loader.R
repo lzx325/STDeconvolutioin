@@ -103,7 +103,7 @@ load_stereo_seq=function(){
     sc_obj=readRDS(sc_obj_fp)
     sc_counts=sc_obj$sc_count
 
-    sc_labels=as.factor(gsub("/"," or ",sc_obj$cell_type_anno$cell_type_anno))
+    sc_labels=as.factor(sc_obj$cell_type_anno$cell_type_anno)
     names(sc_labels)=rownames(sc_obj$cell_type_anno)
     
     ret_list=list(
@@ -146,7 +146,7 @@ load_ST_PDAC=function(){
     data=readRDS("ST_PDAC/PDAC_GSM4100721.rds")
     sc_counts=data$sc_count
 
-    sc_labels=as.factor(gsub("/"," or ",data$cell_type))
+    sc_labels=as.factor(data$cell_type)
     names(sc_labels)=colnames(sc_counts)
 
     st_counts=data$st_count
